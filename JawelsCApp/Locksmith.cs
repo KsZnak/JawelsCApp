@@ -19,8 +19,8 @@ namespace JawelsCApp
         public void WriteDownCombination (string combination)
         {
             writtenDownCombination = combination;
-        } 
-        public void ReturnContents (Jewels safeContents, Owner owner)
+        }
+        virtual public void ReturnContents (Jewels safeContents, Owner owner)
         {
             owner.ReceiveContents(safeContents);
         }
